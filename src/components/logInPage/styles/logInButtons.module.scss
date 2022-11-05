@@ -1,0 +1,26 @@
+@import "../../../shared/styles/colors";
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.kakao {
+  width: 27px;
+  padding-right: 5px;
+}
+
+.findWrapper {
+  width: 157px;
+  display: flex;
+  justify-content: space-between;
+
+  & span {
+    font-size: 12px;
+    color: $gray200;
+    cursor: pointer;
+  }
+}

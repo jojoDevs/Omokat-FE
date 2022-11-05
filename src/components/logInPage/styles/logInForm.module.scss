@@ -1,0 +1,22 @@
+@import "../../../shared/styles/colors";
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  gap: 15px;
+}
+
+.register {
+  width: 285px;
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: right;
+
+  & span {
+    font-size: 12px;
+    font-weight: 700;
+    color: $purple200;
+    cursor: pointer;
+  }
+}

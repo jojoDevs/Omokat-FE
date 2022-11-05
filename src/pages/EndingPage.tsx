@@ -1,5 +1,9 @@
 import React from 'react';
 
-export const EndingPage = () => {
-    return <></>
+const EndingPage = () => {
+    return (
+        <></>
+    )
 }
+
+export default EndingPage

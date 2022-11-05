@@ -1,5 +1,9 @@
 import React from 'react';
 
-export const FindIdPage = () => {
-    return <></>
+const FindIdPage = () => {
+    return (
+        <></>
+    )
 }
+
+export default FindIdPage

@@ -1,5 +1,9 @@
 import React from 'react';
 
-export const FindPwdPage = () => {
-    return <></>
+const FindPwdPage = () => {
+    return (
+        <></>
+    )
 }
+
+export default FindPwdPage
