@@ -1,15 +1,18 @@
 import React from 'react';
-import {Header} from "./components/common/Header";
+import "./App.css"
+import "./shared/styles/buttons.scss"
+import "./shared/styles/inputs.scss"
+import Header from "./components/common/Header";
 import {Route, Routes} from "react-router-dom";
-import {LogInPage} from "./pages/LogInPage";
-import {SignUpPage} from "./pages/SignUpPage";
-import {FindIdPage} from "./pages/FindIdPage";
-import {FindPwdPage} from "./pages/FindPwdPage";
-import {MainPage} from "./pages/MainPage";
-import {OmokPage} from "./pages/OmokPage";
-import {EndingPage} from "./pages/EndingPage";
-import {UserPage} from "./pages/UserPage";
-import {Footer} from "./components/common/Footer";
+import LogInPage from "./pages/LogInPage";
+import SignUpPage from "./pages/SignUpPage";
+import FindIdPage from "./pages/FindIdPage";
+import FindPwdPage from "./pages/FindPwdPage";
+import MainPage from "./pages/MainPage";
+import OmokPage from "./pages/OmokPage";
+import EndingPage from "./pages/EndingPage";
+import UserPage from "./pages/UserPage";
+import Footer from "./components/common/Footer";
 
 
 function App() {
