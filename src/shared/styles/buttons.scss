@@ -1,0 +1,86 @@
+@import "colors";
+
+@mixin size90 {
+  width: 90px;
+  height: 35px;
+}
+
+@mixin size200 {
+  width: 200px;
+  height: 45px;
+}
+
+@mixin size285 {
+  width: 285px;
+  height: 45px;
+}
+
+@mixin size400 {
+  width: 400px;
+  height: 65px;
+}
+
+@mixin size1145 {
+  width: 1145px;
+  height: 65px;
+}
+
+@mixin fontBold {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 15px;
+
+  &.size90 {
+    @include size90();
+  }
+
+  &.size200 {
+    @include size200();
+  }
+
+  &.size285 {
+    @include size285();
+  }
+
+  &.size400 {
+    @include size400();
+  }
+
+  &.size1145 {
+    @include size1145();
+  }
+
+  &.purple {
+    background: $purple200;
+    color: $white;
+
+    &:hover {
+      background: $purple300;
+    }
+  }
+
+  &.kakao {
+    background: $kakao;
+    color: $black;
+  }
+
+  &.gray {
+    background: $gray200;
+    color: $white;
+
+    &:hover {
+      background: $gray300;
+    }
+  }
+
+  &.bold {
+    @include fontBold();
+  }
+}
