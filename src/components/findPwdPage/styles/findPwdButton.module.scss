@@ -1,0 +1,28 @@
+@import "../../../shared/styles/mixins";
+@import "../../../shared/styles/colors";
+
+.findButton {
+  @include flex(column);
+  margin-top: 40px;
+}
+
+.response {
+  margin-top: 10px;
+
+  .pwd {
+    color: $purple200;
+    font-weight: 700;
+  }
+}
+
+.textButtons {
+  width: 156px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+
+  & span {
+    color: $gray300;
+    cursor: pointer;
+  }
+}
