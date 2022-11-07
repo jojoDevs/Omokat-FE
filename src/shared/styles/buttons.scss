@@ -1,28 +1,23 @@
-@import "colors";
+@import "colors", "mixins";
 
 @mixin size90 {
-  width: 90px;
-  height: 35px;
+  @include size(90px, 35px);
 }
 
 @mixin size200 {
-  width: 200px;
-  height: 45px;
+  @include size(200px, 45px);
 }
 
 @mixin size285 {
-  width: 285px;
-  height: 45px;
+  @include size(285px, 45px);
 }
 
 @mixin size400 {
-  width: 400px;
-  height: 65px;
+  @include size(400px, 65px);
 }
 
 @mixin size1145 {
-  width: 1145px;
-  height: 65px;
+  @include size(1145px, 65px);
 }
 
 @mixin fontBold {
@@ -38,23 +33,23 @@ button {
   font-size: 15px;
 
   &.size90 {
-    @include size90();
+    @include size90;
   }
 
   &.size200 {
-    @include size200();
+    @include size200;
   }
 
   &.size285 {
-    @include size285();
+    @include size285;
   }
 
   &.size400 {
-    @include size400();
+    @include size400;
   }
 
   &.size1145 {
-    @include size1145();
+    @include size1145;
   }
 
   &.purple {
@@ -72,15 +67,15 @@ button {
   }
 
   &.gray {
-    background: $gray200;
+    background: $gray300;
     color: $white;
 
     &:hover {
-      background: $gray300;
+      background: $gray400;
     }
   }
 
   &.bold {
-    @include fontBold();
+    @include fontBold;
   }
 }
