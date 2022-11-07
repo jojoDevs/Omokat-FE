@@ -1,0 +1,18 @@
+@import "../../shared/styles/colors";
+@import "../../shared/styles/mixins";
+
+.container {
+    @include flex(column);
+    width: 410px;
+    margin: 100px auto;
+}
+
+.logo {
+    width: 280px;
+}
+
+.texts {
+    margin-top: 18px;
+    margin-bottom: 35px;
+    font-size: 15px;
+}

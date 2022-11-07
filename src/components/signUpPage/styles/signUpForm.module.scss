@@ -1,0 +1,17 @@
+@import "../../../shared/styles/colors";
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.questions {
+    .size12 {
+        font-size: 12px;
+    }
+    .size10 {
+        font-size: 10px;
+    }
+    margin: 15px;
+}

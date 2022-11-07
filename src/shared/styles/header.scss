@@ -1,0 +1,17 @@
+@import "colors", "mixins";
+
+.headerWrapper {
+    @include flex;
+    @include size(100vw, 50px);
+    border-bottom: 1px solid $gray100;
+    gap: 30%;
+    padding: 0 160px;
+}
+
+.headerLogo {
+    width: 80px;
+}
+
+.headerProfile {
+    @include size(30px, 30px);
+}
