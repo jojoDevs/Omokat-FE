@@ -10,11 +10,9 @@
 .register {
   width: 285px;
   margin-top: 10px;
-  font-size: 12px;
   text-align: right;
 
   & span {
-    font-size: 12px;
     font-weight: 700;
     color: $purple200;
     cursor: pointer;
