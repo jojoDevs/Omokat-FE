@@ -1,17 +1,19 @@
 @import "../../../shared/styles/colors";
 
 .inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  & p {
+    margin: 0 15px;
+    color: $warning;
+  }
 }
 
 .questions {
-    .size12 {
-        font-size: 12px;
-    }
-    .size10 {
-        font-size: 10px;
-    }
-    margin: 15px;
+  margin: 15px;
+}
+
+.warnings {
+  height: 15px;
 }
