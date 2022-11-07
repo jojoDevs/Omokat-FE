@@ -1,17 +1,7 @@
-@import "../../shared/styles/colors";
 @import "../../shared/styles/mixins";
 
 .container {
   @include flex(column);
   width: 285px;
   margin: 100px auto;
-}
-
-.logo {
-  width: 280px;
-}
-
-.title {
-  font-size: 15px;
-  margin-top: 18px;
 }
