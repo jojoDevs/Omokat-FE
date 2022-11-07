@@ -8,7 +8,7 @@ const LogInPage = () => {
     return (
         <div className={styles.container}>
             <img src={logo} alt="logo" className={styles.logo}/>
-            <p className={styles.title}>귀여운 고양이들과 함께 하는 오목 한 판!</p>
+            <p className={styles.title}>실시간 일대일 오목 게임, 오목캣</p>
             <LogInForm/>
             <LogInButtons/>
         </div>
