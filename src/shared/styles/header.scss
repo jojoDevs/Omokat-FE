@@ -1,17 +1,27 @@
 @import "colors", "mixins";
 
+.container {
+  @include flex;
+  @include size(100vw, 50px);
+  border-bottom: 1px solid $gray100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+}
+
 .headerWrapper {
-    @include flex;
-    @include size(100vw, 50px);
-    border-bottom: 1px solid $gray100;
-    gap: 30%;
-    padding: 0 160px;
+  @include flex;
+  @include size(96vw, 50px);
+  & p {
+    padding: 0 35% 0 30%;
+  }
 }
 
 .headerLogo {
-    width: 80px;
+  width: 80px;
 }
 
 .headerProfile {
-    @include size(30px, 30px);
+  @include size(30px, 30px);
 }
