@@ -1,11 +1,18 @@
-@mixin size ($w, $h){
-    width:$w;
-    height:$h;
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
 }
 
-@mixin flex ($direction:row) {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
+@mixin flex($j:center, $a:center, $d:row) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+  flex-direction: $d;
+}
+
+@mixin grid($gtc, $gap) {
+  display: grid;
+  grid-template-columns: $gtc;
+  column-gap: $gap;
+  row-gap: $gap;
 }

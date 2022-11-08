@@ -1,8 +1,7 @@
 @import "../../../shared/styles/mixins";
 
 .inputWrapper {
-  display: flex;
-  flex-direction: column;
+  @include flex($a: unset, $d: column);
   margin-top: 35px;
 }
 

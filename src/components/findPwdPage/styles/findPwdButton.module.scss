@@ -2,7 +2,7 @@
 @import "../../../shared/styles/colors";
 
 .findButton {
-  @include flex(column);
+  @include flex($d: column);
   margin-top: 40px;
 }
 
@@ -16,9 +16,8 @@
 }
 
 .textButtons {
+  @include flex($j: space-between);
   width: 156px;
-  display: flex;
-  justify-content: space-between;
   margin-top: 15px;
 
   & span {
