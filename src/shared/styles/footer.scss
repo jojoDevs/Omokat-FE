@@ -6,7 +6,7 @@
 }
 
 .footerContainer {
-  @include flex(column);
+  @include flex($d: column);
   background-color: $gray100;
   & p {
     @include texts(34px, 8px);
