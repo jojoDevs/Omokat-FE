@@ -1,0 +1,25 @@
+@import "../../../shared/styles/mixins";
+
+.buttonWrapper {
+  @include flex($d: column);
+  margin-top: 80px;
+
+  & p {
+    width: 1120px;
+    padding-left: 1023px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: 500;
+    }
+  }
+}
+
+.purpleButtons {
+  @include flex;
+  width: 1120px;
+  gap: 13px;
+  margin: 0 auto;
+  padding-left: 927px;
+}

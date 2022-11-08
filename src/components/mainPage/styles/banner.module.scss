@@ -1,0 +1,7 @@
+@import "../../../shared/styles/mixins";
+
+.bannerWrapper {
+  @include size(100vw, 300px);
+  background: #DCE2F7;
+  margin: 50px auto;
+}

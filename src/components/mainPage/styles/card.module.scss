@@ -1,0 +1,26 @@
+@import "../../../shared/styles/mixins";
+@import "../../../shared/styles/colors";
+
+.cardWrapper {
+  @include size(200px, 200px);
+  @include flex($d: column);
+  background: $yellow100;
+  border-radius: 10px;
+
+  img {
+    @include size(80px, 80px);
+    object-fit: contain;
+    margin-top: 15px;
+  }
+}
+
+.status {
+  color: $yellow300;
+  font-size: 13px;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 15px;
+}
