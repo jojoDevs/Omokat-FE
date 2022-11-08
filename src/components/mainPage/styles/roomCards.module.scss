@@ -1,0 +1,13 @@
+@import "../../../shared/styles/mixins";
+
+.contents {
+  @include flex($d: column);
+  width: 100vw;
+  margin-bottom: 60px;
+}
+
+.cardGrid {
+  @include grid(repeat(5, 200px), 30px);
+  width: 1120px;
+  margin: 35px auto;
+}
