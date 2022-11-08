@@ -1,0 +1,6 @@
+@import "../../../shared/styles/colors";
+@import "../../../shared/styles/mixins";
+
+.cat {
+  @include size(150px, 150px);
+}

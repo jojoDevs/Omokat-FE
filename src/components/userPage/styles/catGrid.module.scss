@@ -1,0 +1,7 @@
+@import "../../../shared/styles/colors";
+@import "../../../shared/styles/mixins";
+
+.catGrid {
+  @include grid(repeat(5, 150px), 30px);
+  margin: 30px 0;
+}
