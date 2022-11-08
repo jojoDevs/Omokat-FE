@@ -5,10 +5,10 @@ import "../../shared/styles/header.scss";
 
 const Header = () => {
   return (
-    <div className="container">
+    <div className="headerContainer">
       <div className="headerWrapper">
         <img className="headerLogo" src={logoBlack} alt="logo" />
-        <p>귀여운 고양이들과 함께 하는 오목 한 판!</p>
+        <p className="headerText">귀여운 고양이들과 함께 하는 오목 한 판!</p>
         <img className="headerProfile" src={profile} alt="profile" />
       </div>
     </div>
