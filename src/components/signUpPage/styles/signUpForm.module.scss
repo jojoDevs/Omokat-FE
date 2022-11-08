@@ -1,8 +1,8 @@
 @import "../../../shared/styles/colors";
+@import "../../../shared/styles/mixins";
 
 .inputs {
-  display: flex;
-  flex-direction: column;
+  @include flex($a: default, $d: column);
   gap: 8px;
   & p {
     margin: 0 15px;
