@@ -1,0 +1,26 @@
+@import "mixins", "colors";
+
+.background {
+  @include size(100vw, none);
+  display: inline-block;
+  background: $yellow200;
+  position: relative;
+  z-index: -999;
+}
+
+.bgShadow {
+  @include size(100vw, 100%);
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.bgCatsWrapper {
+  width: 100vw;
+  display: flex;
+}
+
+.bgCats {
+  width: 1000px;
+  margin: 100px auto;
+
+}
