@@ -1,7 +1,6 @@
 @import "colors", "mixins";
 
 .headerContainer {
-  @include flex;
   @include size(100%, 50px);
   border-bottom: 1px solid $gray100;
   position: fixed;
@@ -12,25 +11,17 @@
 }
 
 .headerWrapper {
-  @media (min-width: 1161px) {
-    @include flex($j: space-between);
-    @include size(1120px, 50px);
-  }
+  margin: 0 auto;
+  @include flex($j: space-between);
+  @include size(1120px, 50px);
+
   @media (max-width: 1160px) {
-    @include flex($j: space-between);
-    @include size(1120px, 50px);
-    margin: 0 20px;
+    @include size(97vw, 50px);
   }
-  @media (max-width: 981px) {
-    @include flex($j: space-between);
-    margin: 0 20px;
-    & p {
-      display: none;
-    }
-  }
+
   @media (max-width: 470px) {
-    @include flex($j: space-between);
-    margin-left: 40%;
+    @include size(97vw, 50px);
+    @include flex;
     & p {
       display: none;
     }
@@ -38,7 +29,10 @@
 }
 
 .headerText {
-  padding: 0 36.34% 0 31.78%;
+  width: inherit;
+  text-align: center;
+  white-space: nowrap;
+  margin-left: -50px;
 }
 
 .headerLogo {
@@ -47,4 +41,8 @@
 
 .headerProfile {
   @include size(30px, 30px);
+  @media (max-width: 470px) {
+    position: absolute;
+    right: 20px;
+  }
 }
