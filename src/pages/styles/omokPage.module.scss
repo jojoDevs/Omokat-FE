@@ -1,0 +1,18 @@
+@import "../../shared/styles/mixins";
+@import "../../shared/styles/colors";
+
+.omokContainer {
+  @include size(100vw, 100%);
+  @include flex;
+  position: relative;
+}
+
+.gameWrapper {
+  @include flex;
+  position: absolute;
+}
+
+.gameInfo {
+  @include flex($a: center, $d: column);
+  margin-right: 30px;
+}
