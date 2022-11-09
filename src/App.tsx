@@ -13,6 +13,8 @@ import OmokPage from "./pages/OmokPage";
 import EndingPage from "./pages/EndingPage";
 import UserPage from "./pages/UserPage";
 import Footer from "./components/common/Footer";
+import EndingContent from "./components/endingPage/EndingContent";
+import GetItem from "./components/endingPage/GetItem";
 
 function App() {
   return (
@@ -25,7 +27,11 @@ function App() {
         <Route path={"/find-id"} element={<FindIdPage />} />
         <Route path={"/find-pwd"} element={<FindPwdPage />} />
         <Route path={"/omok/:roomId"} element={<OmokPage />} />
-        <Route path={"/ending"} element={<EndingPage />} />
+        <Route path={"/ending"} element={<EndingPage />}>
+          <Route path={"win"} element={<EndingContent isWin={true} />} />
+          <Route path={"lose"} element={<EndingContent isWin={false} />} />
+          <Route path={"item"} element={<GetItem />} />
+        </Route>
         <Route path={"/user"} element={<UserPage />} />
       </Routes>
       <Footer />

@@ -1,0 +1,13 @@
+@import "../../../shared/styles/mixins";
+
+.boxContainer {
+  @include flex($d: column);
+  cursor: pointer;
+  & p {
+    font-size: 25px;
+  }
+}
+
+.box {
+  @include size(150px, 150px);
+}

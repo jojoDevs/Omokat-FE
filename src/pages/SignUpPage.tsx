@@ -1,18 +1,17 @@
 import React from "react";
-import logo from '../assets/logo/logo.svg'
-import styles from './styles/signUpPage.module.scss'
-import SignUpButtons from '../components/signUpPage/SignUpButtons';
-import SignUpForm from '../components/signUpPage/SignUpForm';
+import styles from "./styles/signUpPage.module.scss";
+import SignUpButtons from "../components/signUpPage/SignUpButtons";
+import SignUpForm from "../components/signUpPage/SignUpForm";
+import LogoTitle from "../components/common/LogoTitle";
 
 const SignUpPage = () => {
-    return (
-        <div className={styles.container}>
-            <img src={logo} alt="logo" className={styles.logo}/>
-            <p className={styles.texts}>지금 가입하고 냐옹냐옹~</p>
-            <SignUpForm/>
-            <SignUpButtons/>
-        </div>
-    )
-}
+  return (
+    <div className={styles.container}>
+      <LogoTitle title="지금 가입하고 냐옹냐옹~" />
+      <SignUpForm />
+      <SignUpButtons />
+    </div>
+  );
+};
 
-export default SignUpPage
+export default SignUpPage;

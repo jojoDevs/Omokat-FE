@@ -4,7 +4,7 @@ import { Input285 } from "../common/Inputs";
 
 const SignUpForm = () => {
   return (
-    <div>
+    <>
       <div className={styles.inputs}>
         <Input285 placeholder="아이디 (5자 ~ 12자)" />
         <div className={styles.warning}>
@@ -33,7 +33,7 @@ const SignUpForm = () => {
       <div className={styles.inputs}>
         <Input285 placeholder="비밀번호 찾기 답변 (20자 이내)" />
       </div>
-    </div>
+    </>
   );
 };
 

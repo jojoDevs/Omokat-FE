@@ -1,0 +1,14 @@
+@import "../../../shared/styles/mixins";
+@import "../../../shared/styles/colors";
+
+.textWrapper {
+  @include flex($d: column);
+  & p {
+    font-size: 15px;
+    color: $gray100;
+  }
+}
+
+.endingTitle {
+  font-weight: 700;
+}
