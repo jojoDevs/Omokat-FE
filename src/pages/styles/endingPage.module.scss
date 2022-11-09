@@ -1,0 +1,13 @@
+@import "../../shared/styles/mixins";
+
+.endingContainer {
+  @include size(100vw, 100%);
+  @include flex($a: none);
+  position: relative;
+}
+
+.contentsWrapper {
+  @include flex($d: column);
+  position: absolute;
+  margin-top: 150px;
+}

@@ -1,0 +1,7 @@
+@import "../../../shared/styles/mixins";
+
+.buttonWrapper {
+  @include flex($d: column);
+  gap: 15px;
+  margin: 50px auto;
+}

@@ -1,0 +1,13 @@
+@import "../../../shared/styles/colors";
+@import "../../../shared/styles/mixins";
+
+.text {
+  color: $gray100;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 50px;
+}
+
+.boxes {
+  @include flex;
+}
