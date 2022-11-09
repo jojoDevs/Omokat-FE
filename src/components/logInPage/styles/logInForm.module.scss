@@ -2,7 +2,7 @@
 @import "../../../shared/styles/mixins";
 
 .inputWrapper {
-  @include flex(column);
+  @include flex($d: column);
   margin-top: 35px;
   gap: 15px;
 }
