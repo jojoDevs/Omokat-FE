@@ -2,9 +2,9 @@
 @import "../../shared/styles/mixins";
 
 .container {
-  @include flex(column);
+  @include flex($d: column);
   width: 285px;
-  margin: 100px auto;
+  margin: 150px auto;
 }
 
 .logo {

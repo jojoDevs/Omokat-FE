@@ -1,8 +1,8 @@
 @import "colors", "mixins";
 
-.container {
+.headerContainer {
   @include flex;
-  @include size(100vw, 50px);
+  @include size(100%, 50px);
   border-bottom: 1px solid $gray100;
   position: fixed;
   top: 0;
@@ -11,11 +11,12 @@
 }
 
 .headerWrapper {
-  @include flex;
-  @include size(96vw, 50px);
-  & p {
-    padding: 0 35% 0 30%;
-  }
+  @include flex($j: space-between);
+  @include size(1120px, 50px);
+}
+
+.headerText {
+  padding: 0 36.34% 0 31.78%;
 }
 
 .headerLogo {

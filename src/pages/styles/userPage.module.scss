@@ -1,0 +1,13 @@
+@import "../../shared/styles/colors";
+@import "../../shared/styles/mixins";
+
+.userContainer {
+  margin: 135px 160px;
+}
+
+.userTitles {
+  font-weight: 700;
+  & span {
+    color: $purple200;
+  }
+}

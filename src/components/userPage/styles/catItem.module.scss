@@ -1,8 +1,6 @@
 @import "../../../shared/styles/colors";
 @import "../../../shared/styles/mixins";
 
-.buttons {
-  @include flex($d: column);
-  margin-top: 40px;
-  gap: 15px;
+.cat {
+  @include size(150px, 150px);
 }
