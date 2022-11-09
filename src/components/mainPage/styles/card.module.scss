@@ -6,17 +6,41 @@
   @include flex($d: column);
   background: $yellow100;
   border-radius: 10px;
+  position: relative;
 
-  img {
-    @include size(80px, 80px);
-    object-fit: contain;
-    margin-top: 15px;
-  }
+
+}
+
+.layer {
+  @include size(200px, 200px);
+  @include flex($d: column);
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  position: absolute;
+}
+
+.message {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: $white;
+
+}
+
+.arrow {
+  width: 35px;
+  margin-top: 25px;
 }
 
 .status {
   color: $yellow300;
   font-size: 13px;
+}
+
+.profile {
+  @include size(80px, 80px);
+  object-fit: contain;
+  margin-top: 15px;
 }
 
 .username {

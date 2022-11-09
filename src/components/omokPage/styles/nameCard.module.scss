@@ -1,0 +1,29 @@
+@import "../../../shared/styles/mixins.scss";
+@import "../../../shared/styles/colors";
+
+.cardContainer {
+  @include flex($j: space-between);
+  @include size(200px, 100px);
+  padding: 20px 15px;
+  border-radius: 10px;
+  background: $white;
+}
+
+.profile {
+  @include size(60px, 60px);
+}
+
+.user {
+  font-size: 15px;
+  font-weight: bold;
+  color: $black;
+}
+
+.stoneColor {
+  margin-top: 5px;
+}
+
+.black {
+  background: $black;
+  color: $white;
+}

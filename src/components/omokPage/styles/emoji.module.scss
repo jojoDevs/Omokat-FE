@@ -1,0 +1,17 @@
+@import "../../../shared/styles/mixins";
+@import "../../../shared/styles/colors";
+
+.emojiWrapper {
+  @include size(150px, 40px);
+  @include flex;
+  gap: 10px;
+  background: $black;
+  border-radius: 10px;
+  align-self: start;
+  margin-top: 10px;
+
+  & p {
+    font-size: 25px;
+    cursor: pointer;
+  }
+}

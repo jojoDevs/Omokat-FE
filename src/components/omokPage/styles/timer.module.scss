@@ -1,0 +1,21 @@
+@import "../../../shared/styles/mixins";
+@import "../../../shared/styles/colors";
+
+.timeCircle {
+  @include size(100px, 100px);
+  @include flex($d: column);
+  background: $yellow300;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.timeLeft {
+  font-size: 15px;
+  color: $white;
+}
+
+.seconds {
+  font-size: 30px;
+  font-weight: 700;
+  color: $white;
+}

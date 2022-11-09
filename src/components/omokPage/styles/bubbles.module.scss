@@ -1,0 +1,7 @@
+@import "../../../shared/styles/mixins";
+
+.chat {
+  @include size(40px, 40px);
+  margin: 10px;
+
+}

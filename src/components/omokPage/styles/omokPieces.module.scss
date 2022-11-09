@@ -1,0 +1,48 @@
+@import "../../../shared/styles/mixins";
+@import "../../../shared/styles/colors";
+
+.pieceWrapper {
+  @include size(40x, 40px);
+  @include flex;
+}
+
+.colWrapper {
+  @include flex($d: column);
+}
+
+.piece {
+  @include size(20px, 20px);
+  background: $omok;
+
+  &.top {
+    border-top: 1px solid $black;
+  }
+
+  &.bottom {
+    border-bottom: 1px solid $black;
+  }
+
+  &.left {
+    border-left: 1px solid $black;
+  }
+
+  &.right {
+    border-right: 1px solid $black;
+  }
+
+  &.topBold {
+    border-top: 3px solid $black;
+  }
+
+  &.bottomBold {
+    border-bottom: 3px solid $black;
+  }
+
+  &.leftBold {
+    border-left: 3px solid $black;
+  }
+
+  &.rightBold {
+    border-right: 3px solid $black;
+  }
+}
