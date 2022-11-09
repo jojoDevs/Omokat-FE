@@ -1,25 +1,33 @@
 @import "../../../shared/styles/mixins";
 
 .buttonWrapper {
-  @include flex($d: column);
-  margin-top: 80px;
-
-  & p {
-    width: 1120px;
-    padding-left: 1023px;
-    margin-top: 10px;
-    cursor: pointer;
-
-    &:hover {
-      font-weight: 500;
-    }
+  @include flex($a: flex-end, $d: column);
+  width: 1120px;
+  margin: 80px auto 0 auto;
+  @media (max-width: 1120px) {
+    width: 890px;
+  }
+  @media (max-width: 890px) {
+    width: 660px;
+  }
+  @media (max-width: 660px) {
+    width: 430px;
+  }
+  @media (max-width: 470px) {
+    width: 91%;
   }
 }
 
 .purpleButtons {
   @include flex;
-  width: 1120px;
   gap: 13px;
-  margin: 0 auto;
-  padding-left: 927px;
+}
+
+.waiting {
+  margin-top: 10px;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: 500;
+  }
 }

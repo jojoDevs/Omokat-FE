@@ -7,8 +7,11 @@
   background: $yellow100;
   border-radius: 10px;
   position: relative;
-
-
+  @media (max-width: 470px) {
+    @include size(91vw, 100px);
+    @include flex;
+    gap: 15px;
+  }
 }
 
 .layer {
@@ -41,10 +44,17 @@
   @include size(80px, 80px);
   object-fit: contain;
   margin-top: 15px;
+  @media (max-width: 470px) {
+    @include size(60px, 60px);
+    margin: 0;
+  }
 }
 
 .username {
   font-size: 18px;
   font-weight: 700;
   margin-top: 15px;
+  @media (max-width: 470px) {
+    margin: 0;
+  }
 }
