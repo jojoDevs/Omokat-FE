@@ -12,8 +12,29 @@
 }
 
 .headerWrapper {
-  @include flex($j: space-between);
-  @include size(1120px, 50px);
+  @media (min-width: 1161px) {
+    @include flex($j: space-between);
+    @include size(1120px, 50px);
+  }
+  @media (max-width: 1160px) {
+    @include flex($j: space-between);
+    @include size(1120px, 50px);
+    margin: 0 20px;
+  }
+  @media (max-width: 981px) {
+    @include flex($j: space-between);
+    margin: 0 20px;
+    & p {
+      display: none;
+    }
+  }
+  @media (max-width: 470px) {
+    @include flex($j: space-between);
+    margin-left: 40%;
+    & p {
+      display: none;
+    }
+  }
 }
 
 .headerText {
