@@ -1,4 +1,4 @@
-@import "colors", "mixins";
+@import "src/shared/styles/colors", "src/shared/styles/mixins";
 
 .headerContainer {
   @include size(100%, 50px);

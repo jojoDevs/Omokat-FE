@@ -1,4 +1,4 @@
-@import "colors", "mixins";
+@import "src/shared/styles/colors", "src/shared/styles/mixins";
 
 @mixin texts($top, $bottom) {
   color: $gray300;
@@ -9,14 +9,17 @@
   @include flex($d: column);
   @include size(100%, 143.82px);
   background-color: $gray100;
+
   & p {
     @include texts(34px, 8px);
     font-weight: 700;
   }
+
   & a {
     @include texts(29px, 24px);
     text-decoration: none;
   }
+
   & img {
     width: 80px;
   }
