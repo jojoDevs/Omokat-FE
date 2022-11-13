@@ -1,4 +1,4 @@
-@import "mixins", "colors";
+@import "src/shared/styles/mixins", "src/shared/styles/colors";
 
 .background {
   @include size(100vw, none);
