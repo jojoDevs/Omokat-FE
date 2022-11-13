@@ -3,18 +3,30 @@
 
 .inputs {
   @include flex($a: default, $d: column);
-  gap: 8px;
+  // gap: 8px;
   margin-top: 35px;
+}
+
+.questions {
+  @include flex($a: default, $d: column);
+  gap: 15px;
   & p {
+    padding: 0 15px;
+  }
+}
+
+.warning {
+  min-height: 15px;
+  & p {
+    padding: 8px 0 8px 0;
     margin: 0 15px;
     color: $warning;
   }
 }
 
-.questions {
-  margin: 15px;
-}
-
-.warnings {
-  height: 15px;
+.answerWarning {
+  min-height: 15px;
+  & p {
+    color: $warning;
+  }
 }
