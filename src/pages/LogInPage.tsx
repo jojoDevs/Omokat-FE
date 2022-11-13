@@ -5,13 +5,13 @@ import LogInForm from "../components/logInPage/LogInForm";
 import LogInButtons from "../components/logInPage/LogInButtons";
 
 const LogInPage = () => {
-  return (
-    <div className={styles.container}>
-      <LogoTitle title={"실시간 일대일 오목 게임, 오목캣"} />
-      <LogInForm />
-      <LogInButtons />
-    </div>
-  );
+    return (
+        <div className={styles.container}>
+            <LogoTitle title={"실시간 일대일 오목 게임, 오목캣"}/>
+            <LogInForm/>
+            <LogInButtons/>
+        </div>
+    );
 };
 
 export default LogInPage;
