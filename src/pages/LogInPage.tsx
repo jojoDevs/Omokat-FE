@@ -3,8 +3,11 @@ import styles from "./styles/logInPage.module.scss";
 import LogoTitle from "../components/common/LogoTitle";
 import LogInForm from "../components/logInPage/LogInForm";
 import LogInButtons from "../components/logInPage/LogInButtons";
+import useScroll from "../hooks/useScroll";
 
 const LogInPage = () => {
+    useScroll();
+    
     return (
         <div className={styles.container}>
             <LogoTitle title={"실시간 일대일 오목 게임, 오목캣"}/>
