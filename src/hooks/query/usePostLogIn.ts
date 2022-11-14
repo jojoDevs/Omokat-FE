@@ -2,7 +2,6 @@ import {useNavigate} from "react-router-dom";
 import {useMutation} from "react-query";
 import {postLogIn} from "../../shared/routes/apis";
 
-
 const usePostLogIn = (
     id: string,
     password: string,
