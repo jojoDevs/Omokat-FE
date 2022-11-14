@@ -3,16 +3,12 @@
 
 .findButton {
   @include flex($d: column);
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
-.response {
-  margin-top: 10px;
-
-  .pwd {
-    color: $purple200;
-    font-weight: 700;
-  }
+.pwd {
+  color: $purple200;
+  font-weight: 700;
 }
 
 .textButtons {

@@ -1,10 +1,17 @@
 @import "../../../shared/styles/mixins";
+@import "../../../shared/styles/colors";
 
 .inputWrapper {
   @include flex($a: unset, $d: column);
   margin-top: 35px;
+  gap: 15px;
 }
 
-.question {
-  padding: 15px;
+p {
+  padding: 0 0 0 15px;
+
+  &.warning {
+    margin: -5px 0 -5px 0;
+    color: $warning;
+  }
 }
