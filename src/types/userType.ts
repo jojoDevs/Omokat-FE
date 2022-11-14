@@ -6,4 +6,5 @@ export interface UserSliceType {
     nameState: string;
     answerState: string;
     enterState: boolean;
+    resetState: boolean;
 }

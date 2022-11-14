@@ -9,6 +9,7 @@ const initialState: UserSliceType = {
     nameState: "",
     answerState: "",
     enterState: false,
+    resetState: false,
 };
 
 const userSlice = createSlice({
@@ -36,6 +37,9 @@ const userSlice = createSlice({
         setEnterState: (state, action) => {
             state.enterState = action.payload;
         },
+        setResetState: (state, action) => {
+            state.resetState = action.payload;
+        }
     },
 });
 
@@ -47,5 +51,6 @@ export const {
     setNameState,
     setAnswerState,
     setEnterState,
+    setResetState,
 } = userSlice.actions;
 export default userSlice.reducer;
