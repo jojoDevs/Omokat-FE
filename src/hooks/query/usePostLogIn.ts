@@ -10,6 +10,7 @@ const usePostLogIn = (
     return useMutation(() => postLogIn(id, password), {
         onSuccess: (data) => {
             sessionStorage.setItem('token', data.data.token)
+            sessionStorage.setItem('pic', data.data.pic)
             navigate("/");
         },
     });
